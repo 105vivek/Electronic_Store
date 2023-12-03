@@ -1,0 +1,464 @@
+/* .container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+    width: 600px;
+    background:#fff;
+    padding-bottom: 30px;}
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+        width: 100%;
+        margin-top: 30px;
+        }
+.text{
+color: #3c009d;
+font-size: 48px; font-weight: 700;
+}
+.underline{ width: 61px;
+height: 6px; background:
+#3c009d;
+border-radius: 9px;
+}
+.inputs{
+margin-top: 55px;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+.input{
+display: flex;
+align-items: center;
+margin: auto;
+width: 480px;
+height: 80px;
+background:
+#eaeaea;
+border-radius: 6px;}
+﻿
+.input img{
+margin: 0px 30px;
+}
+.input input{
+height: 50px;
+width: 400px;
+background: transparent;
+border: none;
+outline: none;
+color: #797979; font-size: 19px;}
+.forgot-password{ padding-left: 62px;
+margin-top: 27px;
+color: #797979;
+font-size: 18px;
+}
+.forgot-password span{
+color:
+#4c00b4;
+cursor: pointer;
+}
+.submit-container{
+display: flex;
+gap: 30px;
+margin: 60px auto;
+}
+﻿
+.submit{
+display: flex;
+justify-content: center; align-items: center;
+width: 220px;
+height: 59px;
+color: #fff;
+background:
+#4c00b4;
+border-radius: 50px;
+font-size: 19px; font-weight: 700;
+cursor: pointer;}
+
+.gray{
+    background-color: #EAEAEA;
+    color: #676767;
+} */
+
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  width: 400px;
+  background: rgba(246, 123, 174, 0.856);
+  padding: 20px;
+  border-radius: 10px;
+  
+  height: 400px;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30px; /* Adjust the height of the reflection */
+  background: linear-gradient(to bottom, rgba(25, 25, 75, 0), rgba(231, 113, 113, 0.4));
+  border-radius: 10px;
+  pointer-events: none; /* Make sure the reflection is not interactive */
+}
+
+.container::before {
+  top: 0;
+}
+
+.container::after {
+  bottom: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.text {
+  color: #b2a3ca;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #3c009d;
+  border-radius: 9px;
+  margin: 10px auto;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  
+  background: rgba(156, 122, 86, 0.856);
+  border-radius: 10px;
+  border-radius: 8px;
+}
+
+.input img {
+  margin: 0 15px;
+}
+
+.input input {
+  flex: 1;
+  height: 100%;
+  padding: 0 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #ca8787;
+}
+
+.forgot-password {
+  margin-top: 15px;
+  text-align: right;
+  color: #4c00b4;
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.mail,
+.pass {
+  /* Add styles for the email and password inputs */
+  border: 1px solid #351c5d;
+  /* Set border color */
+  background-color: #d78484;
+  /* Set background color */
+  color: #d38888;
+  /* Set text color */
+}
+
+
+
+/* background: rgba(231, 149, 61, 0.856); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button {
+    background-color: #3c009d;;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+  } */
+/* button {
+    background-color: #3c009d;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  } */
+
+/* button:hover {
+    background-color: #380083;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+.login-container {
+  background-color: #7c2f2f;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: #3c009d;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #3c009d;
+  border-radius: 9px;
+  margin: 10px auto;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #eaeaea;
+  border-radius: 8px;
+}
+
+.input img {
+  margin: 0 15px;
+}
+
+.input input {
+  flex: 1;
+  height: 100%;
+  padding: 0 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #797979;
+}
+
+.forgot-password {
+  margin-top: 15px;
+  text-align: right;
+  color: #4c00b4;
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Add these styles for the buttons */
+.loginbtn,
+.accbtn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+  background: #4c00b4;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.loginbtn:hover,
+.accbtn:hover {
+  background: #380083;
+}
+
+.accbtn {
+  background: #941818;
+  color: #ded2d2;
+  border: 1px solid #672a2a;
+  transition: background 0.3s ease;
+}
+
+.accbtn:hover {
+  background: linear-gradient(45deg, #753131, #823737);
+}
+
+
+/* Add these styles for the buttons */
+.signupbtn,
+.Googlebtn,
+.Aloginbtn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.signupbtn:hover,
+.Googlebtn:hover,
+.Aloginbtn:hover {
+  background: #380083;
+}
+
+.signupbtn {
+  background: #4c00b4;
+}
+
+.signupbtn:hover {
+  background: #380083;
+}
+
+.Googlebtn {
+  background: #4285f4;
+}
+
+.Googlebtn:hover {
+  background: #357ae8;
+}
+
+.Aloginbtn {
+  background: #672a2a;
+}
+
+.Aloginbtn:hover {
+  background: linear-gradient(45deg, #753131, #823737);
+}
+
+
+/* .submit {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+   }
+    */
+.submit:hover {
+  background: #380083;
+}
+
+.gray {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: #676767;
+  background: #672a2a;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.gray:hover {
+  background: linear-gradient(45deg, #753131, #823737);
+}
+
+body {
+  background-image: url('C:\Users\LENOVO\Desktop\Cyclle main\Electronic_Store\Cycle Project\src\Components\Assets\patrick-hendry-1ow9zrlldJU-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: rgba(173, 216, 230, 0.8);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 600px;
+}
